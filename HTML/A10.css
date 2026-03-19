@@ -1,0 +1,92 @@
+body{
+font-family:Arial;
+margin:20px;
+}
+
+.intro::first-letter{
+font-size:40px;
+font-weight:bold;
+color:red;
+}
+
+.news::first-line{
+background:yellow;
+font-weight:bold;
+}
+
+.note::before{
+content:"NOTE: ";
+color:red;
+font-weight:bold;
+}
+
+.copyright::after{
+content:"  2026";
+}
+
+.tasklist li:first-child{
+color:red;
+}
+
+.tasklist li:nth-child(2){
+font-weight:bold;
+}
+
+.tasklist li:last-child{
+color:blue;
+}
+
+.altlist li:nth-child(odd){
+background:#f0f0f0;
+}
+
+.altlist li:nth-child(even){
+background:#dcdcdc;
+}
+
+a[target="_blank"]{
+color:red;
+}
+
+a[href^="https"]{
+font-weight:bold;
+}
+
+a:hover{
+color:green;
+}
+
+img[src$=".png"]{
+border:4px solid black;
+}
+
+input[placeholder*="name"]{
+background:#f5f5dc;
+}
+
+.container p{
+color:purple;
+}
+
+.direct > p{
+color:orange;
+}
+
+h2 + p{
+color:blue;
+}
+
+h3 ~ p{
+font-style:italic;
+}
+
+input:focus{
+border:2px solid red;
+outline:none;
+background:#ffffcc;
+}
+
+input[type="checkbox"]:checked + label{
+color:red;
+font-weight:bold;
+}

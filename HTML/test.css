@@ -1,0 +1,103 @@
+body{
+    font-family: Arial;
+    margin:0;
+    background: repeating-linear-gradient(
+90deg,
+transparent,
+transparent 250px,
+white 201px
+),
+    linear-gradient(
+90deg,
+#7ec8e3,
+#f5c6a5,
+#ffffff,
+#f6f1a6
+);
+}
+
+/* header */
+.header{
+    background: linear-gradient(to right, rgb(243, 243, 237), rgb(247, 245, 243));
+    padding:20px;
+    text-align:center;
+}
+
+/* common box style */
+.box{
+    width:120px;
+    height:120px;
+    padding:10px;
+    position:absolute;
+}
+
+/* box1 absolute */
+.box1{
+    background:rgb(228, 11, 134);
+    right:440px;
+    top:30px;
+    height:80px;
+    transform: rotate(-15deg) skewX(30deg);
+}   
+
+/* box2 rotated */
+.box2{
+    background:lavender;
+    right:350px;
+    top:250px;
+    width:50px;
+    height:90px;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+/* box3 fixed */
+.box3{
+    background:#e6e6b3;
+    position:fixed;
+    width:180px;
+    height:180px;
+    bottom:40px;
+    right:40px;
+    transform: scale(1.2);
+}
+
+.box3:hover{
+    width: 200px;
+    color: red;
+    transform: scale(1.5);
+    background-color:cyan;
+}
+
+/* box4 */
+.box4{
+    background:burlywood;
+    left:10px;
+    top:100px;
+    height:100px;
+    width: 30px;
+}
+
+/* box5 sticky */
+.box5{
+    background:#c9e2f2;
+    position:sticky;
+    top:150px;
+    margin-left:300px;
+}
+
+/* box6 */
+.box6{
+    background:purple;
+    color:white;
+    right:350px;
+    top:260px;
+    width:50px;
+    height:80px;
+    position:absolute;
+    z-index: 1;
+}
+
+.box6:hover{
+    z-index: 10;
+}   
